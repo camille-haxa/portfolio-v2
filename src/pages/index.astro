@@ -1,16 +1,9 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
 
+const pageTitle = "Camille Haxa";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/png" href="/icons8-trans-48.png" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Camille Haxa</title>
-  </head>
-  <body>
-    <h1>Camille Haxa</h1>
-  </body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+  <h2>Développeur web</h2>
+</BaseLayout>
