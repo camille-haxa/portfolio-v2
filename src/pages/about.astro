@@ -1,8 +1,34 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 const pageTitle = "À propos";
+import { Image } from "astro:assets";
+import avatar from "../assets/avatar4.png";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <p>lorem ipsum</p>
+  <section class="intro">
+    <Image src={avatar} alt="A colourful drawn portrait" class="avatar" />
+    <p id="intro-txt">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae porro
+      velit cum labore amet obcaecati ipsam modi nobis accusantium similique
+      facilis nihil voluptas, quidem animi aliquam quis ipsa. Praesentium, in.
+    </p>
+  </section>
+  <section>
+    <p>now</p>
+    <p>roadmap</p>
+  </section>
 </BaseLayout>
+
+<style>
+  .avatar {
+    border-radius: 50%;
+    width: 10rem;
+    height: auto;
+  }
+
+  .intro {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+</style>
