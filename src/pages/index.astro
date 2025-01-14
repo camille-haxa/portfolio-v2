@@ -7,14 +7,22 @@ import avatar from "../assets/avatar4.png";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
+  <div class="intro-image">
+    <Image src={avatar} alt="A colourful drawn portrait" class="avatar" />
+  </div>
   <h2>Développeur web</h2>
-  <Image src={avatar} alt="A colourful drawn portrait" class="avatar" />
 </BaseLayout>
 
 <style>
   .avatar {
     border-radius: 50%;
-    width: 10rem;
+    width: 15rem;
     height: auto;
+    margin: auto;
+  }
+
+  .intro-image {
+    display: flex;
+    padding-top: 2rem;
   }
 </style>
