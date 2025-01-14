@@ -2,8 +2,19 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 const pageTitle = "Camille Haxa";
+import { Image } from "astro:assets";
+import avatar from "../assets/avatar4.png";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
   <h2>Développeur web</h2>
+  <Image src={avatar} alt="A colourful drawn portrait" class="avatar" />
 </BaseLayout>
+
+<style>
+  .avatar {
+    border-radius: 50%;
+    width: 10rem;
+    height: auto;
+  }
+</style>
