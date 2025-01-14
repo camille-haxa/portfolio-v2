@@ -4,5 +4,36 @@ const pageTitle = "À propos";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <p>lorem ipsum</p>
+  <section class="intro">
+    <p id="intro-txt">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae porro
+      velit cum labore amet obcaecati ipsam modi nobis accusantium similique
+      facilis nihil voluptas, quidem animi aliquam quis ipsa. Praesentium, in.
+    </p>
+    <a href="https://github.com/camille-haxa">github</a>
+  </section>
+  <section>
+    <p>tools of the trade</p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae porro velit
+    cum labore amet obcaecati ipsam modi nobis accusantium similique facilis nihil
+    voluptas, quidem animi aliquam quis ipsa. Praesentium, in.
+    <p>roadmap</p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae porro velit
+    cum labore amet obcaecati ipsam modi nobis accusantium similique facilis nihil
+    voluptas, quidem animi aliquam quis ipsa. Praesentium, in.
+  </section>
 </BaseLayout>
+
+<style>
+  .intro {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  a {
+    padding: 0.5rem 1rem;
+    color: #f9f9f9;
+    background-color: #50858b;
+    text-decoration: none;
+  }
+</style>

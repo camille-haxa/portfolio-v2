@@ -36,6 +36,15 @@ body {
 h1 {
   margin: 1rem 0;
   font-size: 2.5rem;
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+}
+
+h2 {
+  margin: 1rem;
+  text-align: center;
+  padding-top: 1rem;
 }
 
 /* nav styles */
