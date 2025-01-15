@@ -90,6 +90,14 @@ h2 {
   display: unset;
 }
 
+/* footer style */
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+}
+
 /* landing page style */
 
 .avatar {
