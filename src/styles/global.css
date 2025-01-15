@@ -37,7 +37,7 @@ h1 {
   margin: 1rem 0;
   font-size: 2.5rem;
   text-align: center;
-  padding-top: 4rem;
+  padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
@@ -90,10 +90,24 @@ h2 {
   display: unset;
 }
 
+/* landing page style */
+
+.avatar {
+  border-radius: 50%;
+  width: 15rem;
+  height: auto;
+  margin: auto;
+}
+
+.intro-image {
+  display: flex;
+  padding-top: 1rem;
+}
+
 @media screen and (min-width: 636px) {
   .nav-links {
-    margin-left: 5em;
-    display: block;
+    display: flex;
+    justify-content: center;
     position: static;
     width: auto;
     background: none;
@@ -107,4 +121,37 @@ h2 {
   .hamburger {
     display: none;
   }
+
+  h1 {
+    padding-top: 4rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    position: static;
+    width: auto;
+    background: none;
+  }
+
+  .nav-links a {
+    display: inline-block;
+    padding: 1rem 1.25rem;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+  }
+
+  /* .avatar {
+    width: 25rem;
+  } */
 }
