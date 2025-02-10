@@ -1,25 +1,64 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 const pageTitle = "À propos";
+const tools = [
+  "HTML",
+  "CSS",
+  "Javascript",
+  "Python",
+  "NodeJS",
+  "Express",
+  "Astro",
+  "react",
+  "git",
+  "github",
+  "mySQL",
+  "Penpot",
+  "Nextcloud",
+];
 ---
 
 <BaseLayout pageTitle={pageTitle}>
   <section class="intro">
     <p id="intro-txt">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae porro
-      velit cum labore amet obcaecati ipsam modi nobis accusantium similique
-      facilis nihil voluptas, quidem animi aliquam quis ipsa. Praesentium, in.
+      Salut, je m'appelle Camille et je suis développeureuse web.
+    </p>
+    <p>
+      J'aime linux et les logiciels libres, l'écologie, le diy (do it yourself),
+      les communs numériques et j'essaie de contribuer à rendre internet et
+      l'informatique plus accueillants et inclusifs
+    </p>
+    <p>
+      J'ai travaillé comme éducateurice spécialisé.e (dans la protection de
+      l'enfance et le handicap), j'ai une formation de prof de yoga (avec un
+      focus sur l'accessibilité) et je suis aujourd'hui en reconversion dans
+      l'informatique. En février 2024 j'ai officiellement démarrer cette
+      nouvelle carrière en suivant une formation pour préparer le titre DWWM
+      (obtenu en octobre 2024). Je continue de me former depuis.
+    </p>
+    <h3>Ce qui m'interresse:</h3>
+    <p>
+      serveurs, autohebergement, logiciels libres, python, typescript, CI/CD,
+      TDD, accessibilité, craft, bonnes pratiques, protection des données,
+      communs numériques
+    </p>
+    <h3>J'aime:</h3>
+    <p>
+      le travail collaboratif, le pair-programming, trouver et résoudre des
+      bugs, la ligne de commande, git, apprendre de nouvelles manières de faire,
+      comprendre comment les choses fonctionnent, le design accessible, les
+      solutions logicielles frugales, les espaces de coopération, les
+      synthétiseurs, mes ami.e.s et stardew valley
     </p>
   </section>
   <section>
-    <p>tools of the trade</p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae porro velit
-    cum labore amet obcaecati ipsam modi nobis accusantium similique facilis nihil
-    voluptas, quidem animi aliquam quis ipsa. Praesentium, in.
-    <p>roadmap</p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae porro velit
-    cum labore amet obcaecati ipsam modi nobis accusantium similique facilis nihil
-    voluptas, quidem animi aliquam quis ipsa. Praesentium, in.
+    <h3>outils techniques:</h3>
+    <p>
+      liste en évolution constante du coup forcément non-exhaustive
+      <ul>
+        {tools.map((tool) => <li>{tool}</li>)}
+      </ul>
+    </p>
   </section>
 </BaseLayout>
 

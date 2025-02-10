@@ -1,0 +1,27 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const pageTitle = "Politique de confidentialité";
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <h3>Contenu embarqué depuis d'autres sites</h3>
+  <p>
+    Je ne propose pas de contenu embarqué depuis d'autres sites mais des liens
+    direct vers des sites extérieurs, avec la vigilance de ne pas transmettre
+    d'informations à d'autres sites webs par le biais de mon site web
+  </p>
+  <h3>Statistiques de fréquentation</h3>
+  <p>
+    Mon hébergeur utilise l'outil opensource AWStat, qui relève les logs du
+    serveur pour mesurer les données d’audience du site. Ces données ne sont
+    transmises à aucun tiers.
+  </p>
+  <h3>Sécurité du site</h3>
+  <p>
+    Ce site est analysé à la recherche de logiciels malveillants et de
+    vulnérabilités. Aucune donnée personnelle n'est récupérée lors de l’analyse.
+    L’adresse IP des visiteurs et visiteuses, est enregistrée conditionnellement
+    pour vérifier l’activité malveillante et protéger le site contre des types
+    spécifiques d’attaques.
+  </p>
+</BaseLayout>
