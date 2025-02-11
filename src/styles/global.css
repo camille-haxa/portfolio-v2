@@ -6,6 +6,7 @@ html {
     rgba(238, 130, 238, 0.47) 100%
   );
   font-family: monospace;
+  font-size: large;
 }
 
 html.dark {
