@@ -127,6 +127,8 @@ h3 {
   padding-top: 1rem;
 }
 
+/* media queries */
+
 @media screen and (min-width: 636px) {
   .nav-links {
     display: flex;
@@ -137,8 +139,11 @@ h3 {
   }
 
   .nav-links ul {
-    display: inline-block;
-    padding: 1rem 1.25rem;
+    display: flex;
+  }
+
+  .nav-links li {
+    padding: 1rem;
   }
 
   .hamburger {
@@ -159,9 +164,12 @@ h3 {
     background: none;
   }
 
-  .nav-links a {
-    display: inline-block;
-    padding: 1rem 1.25rem;
+  .nav-links ul {
+    display: flex;
+  }
+
+  .nav-links li {
+    padding: 2rem;
   }
 
   .hamburger {
